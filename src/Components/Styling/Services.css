@@ -117,7 +117,10 @@
     padding: 25px;
 
     }
-
+#services-button {
+    margin-left: 0%;
+    width: 270px;
+}
     .services-label {
         text-align: left;
     }
@@ -139,6 +142,7 @@
 @media (max-width: 767px) {
     .services-container {
         grid-template-columns: 1fr;
+        margin-top: 7%;
     }
 
     .services-form {

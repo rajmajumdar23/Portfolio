@@ -129,7 +129,7 @@ const Services = () => {
                 className='services-textarea'
               />
             </div>
-            <h2 className='services-label'>Courses</h2><br />
+            <h2 className='services-label' id="course">Courses</h2><br />
             <div className='services-checkbox-container'>
             <div class="container text-center">
               <div className='row'id='row'>

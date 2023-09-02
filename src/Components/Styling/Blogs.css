@@ -200,11 +200,11 @@
   }
 
   .blogs p {
-    width: 296px;
-    margin-left: 1%;
+       color: #fff;
     font-size: 11px;
+    margin-left: 4%;
     text-align: justify;
-    color: white;
+    width: 260px;
   }
 
   .blog-post {

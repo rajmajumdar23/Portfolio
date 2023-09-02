@@ -11,7 +11,7 @@ const Blogs = () => {
         <source src={Blogvideo} type="video/mp4" />
       </video>
       <div className="blogs">
-        <h1 >Best React Blogs to Follow</h1>
+        <h1 > Blogs to Follow</h1>
         <p>
           This is why we have compiled a list of the best blogs and sites you should start following immediately when it comes to learning and getting up to date with React.js. Of course, this is not a complete list, but it comes really close to what thousands of developers are reading and recommending at the moment, and I have found personally lots of practical examples that can be applied in production sites.
         </p>

@@ -26,14 +26,17 @@
 }
 
 .Heading {
-    text-align: left;
-    color: white;
-    width: 498px;
-    font-size: 35px;
-    margin-left: -1.5%;
-    margin-top: 30%;
+    position: absolute;
+    -webkit-animation: headingtext1 2s infinite;
     animation: headingtext1 2s infinite;
-    font-family: 'ADLaM Display', cursive;
+    color: #fff;
+    font-family: ADLaM Display,cursive;
+    font-size: 35px;
+    margin-left: -2%;
+    margin-top: 20%;
+    text-align: left;
+    width: 498px;
+}
 }
 
 @keyframes headingtext1 {
@@ -51,13 +54,13 @@
 }
 
 .Heading2 {
-    position: absolute;
-    color: #F95E21;
-    font-size: 49px;
-    margin-left: -33%;
-    margin-top: 25%;
-    font-family: 'ADLaM Display', cursive;
     animation: headingtext2 2s infinite;
+    color: #f95e21;
+    font-family: ADLaM Display,cursive;
+    font-size: 49px;
+    margin-left: -2%;
+    margin-top: 25.2%;
+    position: absolute;
 }
 
 @keyframes headingtext2 {
@@ -110,7 +113,7 @@
     .services-form {
     border-radius: 10px;
     margin-left: -37%;
-    margin-top: 38%;
+    margin-top: 47%;
     max-width: 956px;
     padding: 25px;
 

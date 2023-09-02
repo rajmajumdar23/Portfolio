@@ -194,10 +194,10 @@
     margin-left: 20%;
 }
 .top-right-image {
-  top: 58px;
-  right: -304px;
-  width: 46px;
   position: relative;
+    right: -323px;
+    top: 66px;
+    width: 46px;
   }
   
 }

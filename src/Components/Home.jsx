@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Styling/home.css';
 import Mypic from "../Images/home.png";
-import VideoBackground from "../Video/Website.mkv";
+import VideoBackground from "../Video/website.mp4";
 const Home = () => {
   const fullIntro = "Hi, I'm Raj Majumdar, a web Developer .";
   const typingInterval = 100;

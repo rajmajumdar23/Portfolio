@@ -245,14 +245,14 @@
   }
 
   #h4 {
-    line-height: 1.6;
-    text-underline-offset: 0.3rem;
-    text-decoration: underline;
     animation: orangec 2s infinite;
-    margin-bottom: 1%;
-    color: #FF5F1F;
-    font-size: 13px;
+    color: #ff5f1f;
+    font-size: 11.8px;
+    line-height: 1.6;
+    margin-bottom: -1%;
     margin-top: 3%;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
   }
 
   @keyframes orangec {

@@ -174,7 +174,7 @@
         margin-left: 13%;
         padding: 18px;
         position: fixed;
-        max-width: 79%;
+        max-width: 65%;
         margin-top: -7%;
     }
 
@@ -231,14 +231,14 @@
 
     #row {
         margin-bottom: 6%;
-        text-align: left;
-        width: 339px;
-        margin-top: -13%;
-        margin-left: -33px;
+    margin-left: -10px;
+    margin-top: -7%;
+    text-align: left;
+    width: 339px;
     }
 
     #col {
-        margin-left: -2%;
+        margin-left: 0%;
     }
 
     .op-label {

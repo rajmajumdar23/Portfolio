@@ -167,7 +167,9 @@
     .services-container {
         grid-template-columns: 1fr;
     }
-
+#course{
+    display:none;
+}
     .services-form {
         animation: none;
         margin-left: 13%;

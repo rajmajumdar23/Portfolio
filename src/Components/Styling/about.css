@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Kanit:wght@500&family=Monoton&family=Rubik+Mono+One&display=swap');
+*{
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.about-container {
+  max-width: 901px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-overlay {
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: -26%;
+}
+
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: -1%;
+  overflow: hidden;
+}
+
+.icon {
+  font-size: 24px;
+  color: #ff5f1f;
+  animation: icons 2s infinite;
+}
+.section-heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #00BFFF;
+  animation: section-heading 2s infinite;
+}
+@keyframes section-heading {
+  0% {
+    text-shadow: 0 0 10px #00BFFF;
+  }
+
+  50% {
+    text-shadow: 0 0 30px #58cbf2;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #00BFFF;
+  }
+}
+.Strong{
+  font-size:25px; 
+  color: #ff5f1f;
+  animation: strong-2 2s infinite;
+  margin-bottom: 10px;
+}
+
+.SkillBar{
+  margin-top: -4%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  color: white;
+  animation: Skillbar 2s infinite;
+}
+@keyframes Skillbar {
+  0% {
+    text-shadow: 0 0 10px white;
+  }
+
+  20% {
+    text-shadow: 0 0 30px white;
+  }
+
+  60% {
+    text-shadow: 0 0 10px white;
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 20px;
+}
+.list li {
+  text-align: justify;
+  max-width: 91%;
+  font-size: 23px;
+  margin-bottom: 17px;
+  color: white;
+  animation: list_li 2s infinite;
+}
+@keyframes list_li {
+  0% {
+    text-shadow: 0 0 10px white;
+  }
+
+  20% {
+    text-shadow: 0 0 30px white;
+  }
+
+  60% {
+    text-shadow: 0 0 10px white;
+  }
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.skill-bar {
+  width: 30%;
+  background-color: #ff5f1f;
+  border-radius: 5px;
+  height: 20px;
+  animation: Skill-bar 2s infinite;
+  margin-top: 5px;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #00BFFF;
+  animation: skill-level 2s infinite;;
+}
+@keyframes skill-level {
+  0% {
+    box-shadow: 0 0 10px #00BFFF;
+  }
+
+  40% {
+    box-shadow: 0 0 20px #58cbf2;
+  }
+
+  80% {
+    box-shadow: 0 0 10px #00BFFF;
+  }
+}
+.achievement-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.achievement-image {
+  max-width: 203px;
+  min-height: 203px;
+  border-radius: 50%;
+  margin-right: -32px;
+}
+.Strong-2{
+  font-size:25px;
+  color: #ff5f1f;
+  animation: strong-2 2s infinite;
+  margin-bottom: 10px;
+}
+@keyframes strong-2 {
+  0% {
+    text-shadow: 0 0 10px #ff5f1f;
+  }
+
+  50% {
+    text-shadow: 0 0 30px #d47650;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #ff5f1f;
+  }
+}
+.achievement-description {
+  margin-right: 3%;
+  font-size: 18px;
+  color: white;
+  text-align:left ;
+  max-width: 1115px;
+  margin-left: 6%;
+}
+.certification-description {
+  margin-right: 2%;
+  font-size: 21px;
+  color: white;
+  max-width: 1115px;
+}
+.contact-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 18px;
+  color: #00cc66;
+  margin-right: 10px;
+}
+
+.contact-text {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.social-media-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #ff5f1f;
+}
+
+.email-icon {
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.email-icon:hover {
+  color: #ff5f1f;
+}
+ .address{
+  font-size: 20px;
+ }
+/* Media Queries */
+@media (max-width: 576px) {
+  .about-container {
+    padding: 20px;
+  }
+  .content-overlay {
+    margin-left: 0;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .section-heading,
+  .Strong,
+  .list li {
+    text-align: left;
+    font-size: 14px;
+ 
+  }
+  .SkillBar {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 14px;
+    color: white;
+    animation: Skillbar 2s infinite;
+  }
+  .section-heading{
+    margin-bottom: 13px;
+  }
+  .skills-container {
+    margin-top: 10%;
+  }
+  .achievement-description {
+    font-size: 10px;
+    margin-left: 10%;
+}
+.address {
+  font-size: 13px;
+}
+.contact-text {
+  font-size: 13px;
+  color: #ffffff;
+}
+.Strong-2{
+width: 50%;
+font-size: 14px;
+}
+.certification-description {
+  font-size: 10px;
+  margin-left: -1%;
+}
+  .achievement-image {
+    max-width: 120px; 
+    min-height: 120px;
+    margin-right: -16px;
+  }
+  #achivement{
+    margin-left: 0%;
+  }
+  .skill-bar {
+    width: 94%;
+    background-color: #ff5f1f;
+    border-radius: 13px;
+    height: 12px;
+    animation: Skill-bar 2s infinite;
+    margin-top: 5px;
+}
+.icon-container {
+  margin-left: 7%;
+  margin-top: 10%;
+  width: 111%;
+  padding: 10px;
+}
+.achievement-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: -11%;
+  animation: fadeInUp 1s ease-in-out;
+}
+} 
+@media (min-width: 577px) and (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+  }
+  .icon-container {
+    margin-top: 8%;
+  }
+  
+  .achievement-image {
+    max-width: 150px; /* Adjust image size for medium screens */
+    min-height: 150px; /* Adjust image size for medium screens */
+    margin-right: -20px; /* Adjust margin for medium screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .about-container {
+    padding: 40px;
+  }
+  .achievement-image {
+    max-width: 180px; /* Adjust image size for larger medium screens */
+    min-height: 180px; /* Adjust image size for larger medium screens */
+    margin-right: -24px; /* Adjust margin for larger medium screens */
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .about-container {
+    padding: 50px;
+  }
+  .achievement-image {
+    max-width: 200px; /* Adjust image size for larger screens */
+    min-height: 200px; /* Adjust image size for larger screens */
+    margin-right: -32px; /* Adjust margin for larger screens */
+  }
+}
+
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

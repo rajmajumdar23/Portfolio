@@ -1,0 +1,139 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Source+Code+Pro:wght@500&display=swap');
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 20%;
+  margin-left: 70%;
+  z-index: 1000;
+  transition: transform 0.3s;
+  background-color: transparent;
+  color: white;
+}
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  outline: none;
+  display: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: grid;
+}
+
+.nav-link {
+  font-family: 'Kanit', sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 15px;
+  font-weight: 550;
+  padding-left: 15px;
+  color: white;
+  background-color: initial;
+  width: 400px;
+  transition: color 0.3s ease, background-color 0.3s ease, width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #f6682f;
+  width: 400px;
+}
+
+/* Media Queries */
+@media (min-width: 1037px) {
+  .nav-links {
+    display: grid;
+    margin-left: 176%;
+  }
+
+  .nav-link {
+    font-size: 8px;
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    background-color: transparent;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .nav-links {
+    display: grid;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 24px;
+    margin: 0 15px;
+    margin-bottom: 4%;
+  }
+}
+
+@media (min-width: 1195px) {
+  .navbar {
+    padding: 20px 40px;
+    width: 20%;
+  }
+
+  .nav-links {
+    display: grid;
+    margin-top:40%;
+    margin-left: 16%;
+  }
+  .nav-link {
+    font-size: 26px;
+    margin: 0 15px;
+    color: #ff5f1f;
+    margin-bottom: 25px;
+    animation: navbar_right 2s infinite;
+  }
+}
+
+@media (max-width: 1158px) {
+  .nav-links {
+    margin-top: -1%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1036px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* Keyframes Animation */
+@keyframes navbar_right {
+  0% {
+    text-shadow: 0 0 10px #ff5f1f;
+  }
+
+  80% {
+    text-shadow: 0 0 30px #d47650;
+  }
+
+  120% {
+    text-shadow: 0 0 10px #ff5f1f;
+  }
+}

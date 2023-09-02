@@ -1,0 +1,324 @@
+/* Complete CSS for your Services component */
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Black+Ops+One&family=Montserrat+Alternates:wght@600&display=swap');
+
+/* Base styles for all screen sizes */
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#row {
+    margin-bottom: 4%;
+    text-align: left;
+    width: 541px;
+    margin-top: -2%;
+}
+
+.op-label {
+    color: white
+}
+
+.services-form {
+    animation: introtext 2s infinite;
+}
+
+.Heading {
+    text-align: left;
+    color: white;
+    width: 498px;
+    font-size: 35px;
+    margin-left: -1.5%;
+    margin-top: 30%;
+    animation: headingtext1 2s infinite;
+    font-family: 'ADLaM Display', cursive;
+}
+
+@keyframes headingtext1 {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #ffffff;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+}
+
+.Heading2 {
+    position: absolute;
+    color: #F95E21;
+    font-size: 49px;
+    margin-left: -33%;
+    margin-top: 25%;
+    font-family: 'ADLaM Display', cursive;
+    animation: headingtext2 2s infinite;
+}
+
+@keyframes headingtext2 {
+    0% {
+        text-shadow: 0 0 10px #F95E21;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #F95E21;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #F95E21;
+    }
+}
+
+#services-button {
+    margin-left: 0%;
+    width: 906px;
+    padding: 10px 20px;
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    animation: introtext 2s infinite;
+    font-size: 18px;
+}
+
+@keyframes introtext {
+    0% {
+        box-shadow: 0 0 10px #00BFFF;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #00BFFF;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #00BFFF;
+    }
+}
+
+/* Styles for screens wider than 768px (with sidebar) */
+@media (min-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+    }
+
+    .services-form {
+        margin-left: -37%;
+        max-width: 956px;
+        padding: 25px;
+        margin-top: 7%;
+        border-radius: 10px;
+
+    }
+
+    .services-label {
+        text-align: left;
+    }
+
+    .video-background {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .start-img {
+        max-width: 70%;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 30%;
+    }
+}
+
+/* Styles for screens between 481px and 767px (without sidebar) */
+@media (max-width: 767px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-form {
+        margin: 0 auto;
+        /* Center the form */
+    }
+
+    .services-label {
+        text-align: left;
+    }
+
+    .video-background {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .start-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Styles for screens narrower than 480px (without sidebar) */
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-form {
+        animation: none;
+        margin-left: 13%;
+        padding: 18px;
+        position: fixed;
+        max-width: 79%;
+        margin-top: -7%;
+    }
+
+    .Heading {
+        text-align: left;
+        margin-bottom: -6%;
+        color: white;
+        width: 163px;
+        font-size: 14px;
+        margin-left: -3.5%;
+        margin-top: -22%;
+        position: absolute;
+        animation: headingtext1 2s infinite;
+        font-family: 'ADLaM Display', cursive;
+    }
+
+    @keyframes headingtext1 {
+        0% {
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        50% {
+            text-shadow: 0 0 20px #ffffff;
+        }
+
+        100% {
+            text-shadow: 0 0 10px #ffffff;
+        }
+    }
+
+    .Heading2 {
+        color: #F95E21;
+        font-size: 20px;
+        margin-left: -4%;
+        margin-top: -11%;
+        position: absolute;
+        font-family: 'ADLaM Display', cursive;
+        animation: headingtext2 2s infinite;
+    }
+
+    @keyframes headingtext2 {
+        0% {
+            text-shadow: 0 0 10px #F95E21;
+        }
+
+        50% {
+            text-shadow: 0 0 20px #F95E21;
+        }
+
+        100% {
+            text-shadow: 0 0 10px #F95E21;
+        }
+    }
+
+    #row {
+        margin-bottom: 6%;
+        text-align: left;
+        width: 339px;
+        margin-top: -13%;
+        margin-left: -33px;
+    }
+
+    #col {
+        margin-left: -2%;
+    }
+
+    .op-label {
+        font-size: 12px;
+    }
+
+    .services-label {
+        text-align: left;
+    }
+
+    .video-background {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .start-img {
+        max-width: 22%;
+        height: auto;
+        border-radius: 50%;
+        margin-left: -39%;
+        animation: headingimg 2s infinite;
+    }
+
+
+    @keyframes headingimg {
+        0% {
+            box-shadow: 0 0 10px #F95E21;
+        }
+
+        50% {
+            box-shadow: 0 0 20px #F95E21;
+        }
+
+        100% {
+            box-shadow: 0 0 10px #F95E21;
+        }
+    }
+
+    #services-button {
+        width: 269px;
+        margin-left: 1%;
+    }
+
+}
+
+/* Basic styles for images and videos */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Basic styles for labels and form elements */
+.services-label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 21px;
+
+}
+
+.services-input,
+.services-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #00BFFF;
+    border-radius: 5px;
+    color: white;
+    animation: introtext 2s infinite;
+    ;
+    font-size: 16px;
+}
+
+/* Add more specific styles for buttons and checkboxes if needed */
+
+
+.services-checkbox-input {
+    margin-right: 10px;
+}

@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Kanit:wght@500&family=Monoton&family=Rubik+Mono+One&display=swap');
+
+* {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.projects-content {
+  display: flex;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-card {
+  max-width: 870px;
+  margin: 20px;
+  padding: 15px;
+  margin-left: -17%;
+  border-radius: 10px;
+  color: #fff;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 0 10px #00BFFF;
+  animation: fadeInUp 1s ease-in-out;
+  position: relative; /* Added to make room for the video */
+  overflow: hidden; /* Hide any overflowing video content */
+}
+
+.project-card video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover; /* Make the video cover the card */
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #00BFFF;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.project-card p {
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
+  animation: fadeInUp 1s ease-in-out;
+}
+.project-card a {
+    color: #FF5733;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .project-card a:hover {
+    color: #00BFFF;
+  }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.top-right-image {
+    border: 2px solid #ff5f1f;
+    border-radius: 50%;
+    position: relative;
+    top: 109px;
+    right: -959px;
+    width: 80px;
+    height: auto;
+    z-index: 10;
+    animation: top-right-image 2s infinite;
+}
+@keyframes top-right-image {
+    0% {
+        box-shadow: 0 0 10px #ff5f1f;
+      }
+    
+      50% {
+        box-shadow: 0 0 30px #d47650;
+      }
+    
+      100% {
+        box-shadow: 0 0 10px #ff5f1f;
+      }
+}
+.search-container {
+    position: relative;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .search-input {
+    margin-top: 3.5%;
+    margin-bottom: 4%;
+    height:50%;
+    margin-left: -17%;
+    max-width: 82.8%;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    background-color: rgba(216, 204, 204, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 10px #ff5f1f;
+    padding-left: 15px;
+}
+  
+  .search-input:focus {
+    background-color: rgba(216, 204, 204, 0.2);
+    box-shadow: 0 0 30px #d47650;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+@media (max-width: 1200px) {
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-content {
+    padding: 10px;
+  }
+  .project-card {
+    position: relative;
+    margin-left: 18.2%;
+    font-size: 14px;
+    width: 74%;
+  }
+  .project-card h2 {
+    font-size: 16px;
+  }
+  .project-card p {
+    font-size: 14px;
+}
+.search-container {
+    margin-top: 10px;
+  }
+  .search-input {
+    font-size: 14px;
+    padding: 8px;
+    max-width: 59%;
+    margin-left: 20%;
+}
+.top-right-image {
+  top: 58px;
+  right: -304px;
+  width: 46px;
+  position: relative;
+  }
+  
+}

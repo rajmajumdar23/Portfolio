@@ -1,0 +1,218 @@
+/* Common styles */
+
+.homepage-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introtext {
+  font-weight: 600;
+    font-size: 29px;
+    color: #00BFFF;
+    margin-top: 0.5%;
+    width: 416px;
+    margin-left:-16%;
+    font-family: 'Source Code Pro', monospace;
+    animation: introtexthome 2s infinite;
+    position: fixed;
+}
+
+@keyframes introtexthome {
+  0% {
+    text-shadow: 0 0 10px #9dd7eb;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #46c8f3;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #00BFFF;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.profile-picture img {
+  width: 414px;
+  margin-top: -53%;
+  position: relative;
+  margin-left: -136%;
+  animation: Profile 2s infinite;
+}
+
+.Headingh {
+  text-align: left;
+  margin-top: 20%;
+  font-size: 37px;
+  margin-left: -11%;
+  margin-bottom: 0%;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .profile-picture img {
+    margin-top: 227%;
+    width: 113px;
+    margin-left: -25%;
+    border-radius: 15%;
+    position: absolute;
+    border: 3px solid;
+  }
+
+  .homepage-container {
+      padding-left: 0;
+  }
+
+  .Headingh {
+    font-size: 20px;
+    margin-left: -13%;
+    margin-top: 103%;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .introtext {
+    text-align: left;
+    margin-top: -4%;
+    font-size: 20px;
+    margin-bottom: 3%;
+    margin-left: -28%;
+    width: 73%;
+    color: #00BFFF;
+    font-family: 'Source Code Pro', monospace;
+    animation: introtexth 2s infinite;
+  }
+
+  @keyframes introtexth {
+    0% {
+      text-shadow: 0 0 10px #9dd7eb;
+    }
+
+    50% {
+      text-shadow: 0 0 20px #46c8f3;
+    }
+
+    100% {
+      text-shadow: 0 0 10px #00BFFF;
+    }
+  }
+}
+
+/* 14-inch and 15.6-inch laptops */
+@media (max-width: 1366px) {
+  #Heading {
+    text-align: left;
+    margin-top: -42%;
+    font-size: 20px;
+    margin-left: -68%;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .introtext {
+    margin-left: -28.5%;
+    font-weight: bold;
+    font-size: 19px;
+    position: fixed;
+    margin-top: -6%;
+    color: #00BFFF;
+    animation: introtext 2s infinite;
+  }
+
+  @keyframes Profile {
+    0% {
+      box-shadow: 0 0 10px #FF5F1F;
+    }
+
+    50% {
+      box-shadow: 0 0 30px #d47650;
+    }
+
+    100% {
+      box-shadow: 0 0 10px #FF5F1F;
+    }
+  }
+}
+
+/* 24-inch monitor */
+@media (min-width: 1921px) {
+  .profile-picture img {
+    margin-top: -21.5%;
+    width: 473px;
+    margin-left: -50%;
+    position: absolute;
+  }
+
+  .intro1 {
+    margin-top: 26%;
+  }
+
+  .intro1 h1 {
+    text-align: left;
+    margin-top: -39%;
+    font-size: 20px;
+    margin-bottom: 3%;
+    margin-left: -67%;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .introtext {
+    margin-top: -8.5%;
+    margin-left: -20.7%;
+    font-weight: bold;
+    font-size: 42px;
+    position: absolute;
+    color: #00BFFF;
+    font-family: 'Source Code Pro', monospace;
+    animation: introtext 2s infinite;
+  }
+
+  @keyframes introtext {
+    0% {
+      text-shadow: 0 0 10px #9dd7eb;
+    }
+
+    50% {
+      text-shadow: 0 0 20px #46c8f3;
+    }
+
+    100% {
+      text-shadow: 0 0 10px #00BFFF;
+    }
+  }
+}

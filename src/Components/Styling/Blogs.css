@@ -1,0 +1,273 @@
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.blogs {
+  margin-left: 9%;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+}
+
+.blogs h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00BFFF;
+  animation: blueani 2s infinite;
+}
+
+@keyframes blueani {
+  0% {
+    text-shadow: 0 0 10px #9dd7eb;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #46c8f3;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #00BFFF;
+  }
+}
+
+.blogs p {
+  font-size: 16px;
+}
+
+.blog-post {
+  margin-top: 30px;
+  text-align: left;
+  padding: 20px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background-color: transparent;
+  animation: whiteani 2s infinite;
+}
+
+@keyframes whiteani {
+  0% {
+    box-shadow: 0 0 10px #ffffff;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #ffffff;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #ffffff;
+  }
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .blogs h1 {
+    text-align: left;
+    font-size: 36px;
+    margin-top: 17%;
+  }
+
+  .blogs p {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+  }
+
+  #h2 {
+    margin-top: 5%;
+    margin-bottom: -2%;
+    animation: colorChange 4s linear infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: wheat;
+    }
+
+    25% {
+      color: #F95E21;
+    }
+
+    50% {
+      color: #ffffff;
+    }
+
+    75% {
+      color: #00BFFF;
+    }
+
+    100% {
+      color: wheat;
+    }
+  }
+
+  .blog-post {
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  #h4 {
+    margin-bottom: 2%;
+    margin-top: 3%;
+    text-decoration: underline;
+    color: #F95E21;
+    text-underline-offset: 0.4rem;
+    animation: orangec 2s infinite;
+  }
+
+  @keyframes orangec {
+    0% {
+      text-shadow: 0 0 10px #FF5F1F;
+    }
+
+    50% {
+      text-shadow: 0 0 30px #d47650;
+    }
+
+    100% {
+      text-shadow: 0 0 10px #FF5F1F;
+    }
+  }
+
+  .blog-post h3 {
+    font-size: 28px;
+    color: #00BFFF;
+    animation: blueani 2s infinite;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+
+  .blog-post p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogs {
+    margin-left: 14%;
+  }
+
+  #h2 {
+    font-size: 18px;
+    margin-top: 9%;
+    margin-bottom: -10%;
+    animation: colorChange 4s linear infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: wheat;
+    }
+
+    25% {
+      color: #F95E21;
+    }
+
+    50% {
+      color: #ffffff;
+    }
+
+    75% {
+      color: #00BFFF;
+    }
+
+    100% {
+      color: wheat;
+    }
+  }
+
+  .blogs h1 {
+    margin-left: -11%;
+    font-size: 21px;
+    margin-top: 20px;
+  }
+
+  .blogs p {
+    width: 263px;
+    margin-left: 1%;
+    font-size: 11px;
+    text-align: justify;
+    color: white;
+  }
+
+  .blog-post {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .blog-post h3 {
+    text-underline-offset: 0.3rem;
+    line-height: 1.5;
+    font-size: 13px;
+    line-break: anywhere;
+    color: #00BFFF;
+    text-decoration: underline;
+    animation: blueani 2s infinite;
+  }
+
+  @keyframes blueani {
+    0% {
+      text-shadow: 0 0 10px #9dd7eb;
+    }
+
+    50% {
+      text-shadow: 0 0 20px #46c8f3;
+    }
+
+    100% {
+      text-shadow: 0 0 10px #00BFFF;
+    }
+  }
+
+  .blog-post p {
+    width: 264px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  #h4 {
+    line-height: 1.6;
+    text-underline-offset: 0.3rem;
+    text-decoration: underline;
+    animation: orangec 2s infinite;
+    color: #FF5F1F;
+    font-size: 13px;
+    margin-top: 3%;
+  }
+
+  @keyframes orangec {
+    0% {
+      text-shadow: 0 0 10px #FF5F1F;
+    }
+
+    50% {
+      text-shadow: 0 0 30px #d47650;
+    }
+
+    100% {
+      text-shadow: 0 0 10px #FF5F1F;
+    }
+  }
+
+  .blog-post {
+    animation: none;
+    margin-left: -7%;
+  }
+}

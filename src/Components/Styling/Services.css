@@ -189,7 +189,9 @@
         animation: headingtext1 2s infinite;
         font-family: 'ADLaM Display', cursive;
     }
-
+.services-checkbox-container{
+    display:none;
+}
     @keyframes headingtext1 {
         0% {
             text-shadow: 0 0 10px #ffffff;

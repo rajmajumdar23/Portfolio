@@ -108,11 +108,11 @@
     }
 
     .services-form {
-        margin-left: -37%;
-        max-width: 956px;
-        padding: 25px;
-        margin-top: 7%;
-        border-radius: 10px;
+    border-radius: 10px;
+    margin-left: -37%;
+    margin-top: 38%;
+    max-width: 956px;
+    padding: 25px;
 
     }
 

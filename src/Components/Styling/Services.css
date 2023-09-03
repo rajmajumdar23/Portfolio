@@ -142,7 +142,7 @@
 @media (max-width: 767px) {
     .services-container {
         grid-template-columns: 1fr;
-        margin-top:17%;
+        margin-top:9%;
     }
 
     .services-form {
